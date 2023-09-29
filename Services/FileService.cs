@@ -35,6 +35,8 @@ public class FileService : IFileService
     
     public void Display()
     {
+        //Modified solution based on the MovieRepository solution covered in class
+
         if(Movies.Count == 0)
         {
             //Log error here
@@ -84,6 +86,8 @@ public class FileService : IFileService
 
     public void Read()
     {
+        //Solution based on the MovieRepository solution covered in class
+
         //_logger.Log(LogLevel.Information, "Reading");
         if(!File.Exists(_fileName))
         {
